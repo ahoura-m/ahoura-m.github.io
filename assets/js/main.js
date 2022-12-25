@@ -16,7 +16,7 @@
 	fetch("https://quotes.rest/qod?category=inspire&language=en")
         .then((response) => response.json())
         .then((data) => {
-			qod.innerHTML = qod.innerHTML + `<b>${data["contents"]["quotes"][0]["quote"]}</b>`
+			qod.innerHTML =`Quote of the day: <b>${data["contents"]["quotes"][0]["quote"]}</b>`
 		})
 
 	// Breakpoints.

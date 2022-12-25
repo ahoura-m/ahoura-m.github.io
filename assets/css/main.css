@@ -2701,9 +2701,12 @@ input, select, textarea {
 		.feature.long .content {
 			padding-top: 0;
 		}
-
 /* Header */
-
+	#quote {
+		padding: 0.5em 0 0em 0;
+		position: relative;
+		text-align: center;
+	}	
 	#header {
 		background-attachment: scroll,							scroll,					fixed;
 		background-image: url("images/top-3200.svg"), url("images/overlay.png"), url("../../images/header.jpg");
