@@ -8,6 +8,16 @@
 
 	var	$window = $(window),
 		$body = $('body');
+	
+	let qod = document.getElementById("qod")
+	let author = document.getElementById("author")
+
+
+	fetch("https://quotes.rest/qod?category=inspire&language=en")
+        .then((response) => response.json())
+        .then((data) => {
+			qod.innerHTML = qod.innerHTML + `<b>${data["contents"]["quotes"][0]["quote"]}</b>`
+		})
 
 	// Breakpoints.
 		breakpoints({
